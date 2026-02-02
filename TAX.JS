@@ -83,3 +83,4 @@ function calculateTax() {
 function emailReport() {
     alert("Email integration can be added later.");
 }
+
