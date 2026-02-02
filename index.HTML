@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Indian Income Tax Calculator – AY 2026-27</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="TAX.CSS">
+</head>
+
+<body>
+
+    <div class="container" id="printArea">
+
+        <h1>Income Tax Calculator</h1>
+        <p class="subtitle">
+            Financial Year April 2025–March 2026 | New Tax Regime | Individual | Resident
+        </p>
+
+        <div class="card">
+
+            <h3>Client Details</h3>
+            <div class="grid">
+                <input type="text" id="clientName" placeholder="Client Name">
+                <input type="text" id="pan" placeholder="PAN (ABCDE1234F)">
+                <input type="email" id="clientEmail" placeholder="Client Email">
+            </div>
+
+            <h3>Income Details</h3>
+            <div class="grid">
+                <input type="number" id="salary" placeholder="Total Taxable Income (₹)">
+            </div>
+
+            <button onclick="calculateTax()">Calculate Tax</button>
+            <button class="secondary" onclick="window.print()">Download PDF</button>
+            <button class="secondary" onclick="emailReport()">Email Report to Client</button>
+
+            <div id="result" class="result"></div>
+
+        </div>
+
+        <footer>
+            <p><strong>For further clarification or professional assistance:</strong></p>
+            <p>📞 9786255830 | 📧 info.akconsult@gmail.com</p>
+            <p class="disclaimer">
+                Disclaimer: This calculator is for indicative purposes only. Final tax liability may vary. Please consult a tax professional.
+            </p>
+        </footer>
+
+    </div>
+
+    <a href="https://wa.me/919786255830" class="whatsapp" target="_blank">
+        💬 Ask AK Consult
+    </a>
+
+    <script src="TAX.JS"></script>
+
+</body>
+
+</html>

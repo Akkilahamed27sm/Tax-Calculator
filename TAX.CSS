@@ -1,0 +1,157 @@
+/* ----------- GLOBAL ----------- */
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: linear-gradient(135deg, #eef2f7, #dfe9f3);
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+
+/* ----------- HEADER ----------- */
+
+h1 {
+    text-align: center;
+    margin-bottom: 5px;
+    color: #1f2d3d;
+}
+
+.subtitle {
+    text-align: center;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+
+/* ----------- CARD ----------- */
+
+.card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ----------- GRID ----------- */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+
+/* ----------- INPUTS ----------- */
+
+input {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #d0d7de;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2f80ed;
+    box-shadow: 0 0 0 2px rgba(47, 128, 237, 0.2);
+}
+
+
+/* ----------- BUTTONS ----------- */
+
+button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #2f80ed, #1366d6);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+button.secondary {
+    background: #6c757d;
+}
+
+
+/* ----------- RESULT BOX ----------- */
+
+.result {
+    margin-top: 25px;
+    padding: 20px;
+    background: #f0f7ff;
+    border-left: 5px solid #2f80ed;
+    border-radius: 8px;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.result h3 {
+    margin-top: 0;
+    color: #0b3d91;
+}
+
+
+/* ----------- FOOTER ----------- */
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #555;
+}
+
+.disclaimer {
+    font-size: 12px;
+    color: #777;
+}
+
+
+/* ----------- WHATSAPP FLOAT ----------- */
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 12px 16px;
+    border-radius: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ----------- PRINT STYLE ----------- */
+
+@media print {
+    body {
+        background: white;
+    }
+    .whatsapp,
+    button {
+        display: none;
+    }
+    .card {
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+}
